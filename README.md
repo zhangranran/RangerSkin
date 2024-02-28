@@ -94,9 +94,8 @@ Demo工程下[gradle.properties](gradle.properties)
 设置为true运行，执行app的assembleReslease或者assembleDebug会在[build](build)生成皮肤包。皮肤包的后缀以.skin结尾。
 
 ### 四、作者
-
+![作者微信](styles%2Fimg.png)<br>
 [作者主页](https://juejin.cn/user/1864393707749687)：https://juejin.cn/user/1864393707749687
-![作者微信](styles%2Fimg.png)
 ### 五、协议
 RangerSkin is licensed under the Apache License 2.0: LICENSE.
 
