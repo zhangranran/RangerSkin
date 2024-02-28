@@ -96,8 +96,7 @@ Demo工程下[gradle.properties](gradle.properties)
 ### 四、作者
 
 [作者主页](https://juejin.cn/user/1864393707749687)：https://juejin.cn/user/1864393707749687
-![wechat.jpg](styles%2Fwechat.jpg)
-<img src=https://github.com/RangerLeoIo/RangerSkin/blob/main/styles/wechat.jpg" width="40%" alt="作者微信" />
+![作者微信](styles%2Fimg.png)
 ### 五、协议
 RangerSkin is licensed under the Apache License 2.0: LICENSE.
 
