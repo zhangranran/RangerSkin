@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+def ignoreTasks = ['kotlin', 'java', 'aidl', 'java', 'dex', 'kapt', 'dataBinding', 'annotationProcessor', 'ksp', 'apklistingfileredirect'] //皮肤包res路径
+def skinRes = ['src/main/res-demo'] //皮肤包res路径
+def skinName = 'demo' //皮肤包名称
+android {
+    namespace 'io.github.ranger.skin'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.rangerleo.skin.demo"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    if (isSkinPackage.toBoolean()) {
+        sourceSets.main {
+            res.srcDirs = skinRes
+            manifest.srcFile 'src/main/AndroidManifest2.xml'
+        }
+        tasks.configureEach { task ->
+            ignoreTasks.forEach {
+                if (task.name.containsIgnoreCase(it)) {
+                    task.enabled = false
+                }
+            }
+        }
+        applicationVariants.configureEach { variant ->
+            variant.getPackageApplicationProvider().configure {
+                it.outputDirectory = new File(rootProject.buildDir.absolutePath + "/skins/${variant.buildType.name}")
+            }
+            variant.outputs.configureEach {
+                outputFileName = "${skinName}.skin"
+            }
+        }
+    } else {
+        buildFeatures {
+            viewBinding = true
+        }
+    }
+}
+dependencies {
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'io.github.rangerleoio.rangerskin:skin-lite:1.0.0'
+}

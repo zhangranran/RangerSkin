@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RangerSkin</string>
+    <string name="app_switch">切换</string>
+    <string name="app_reset">重置</string>
+    <string name="title">标题</string>
+    <string name="extra">今天很开心</string>
+    <string name="reset_skin">重置皮肤样式</string>
+    <string name="switch_skin">切换皮肤样式</string>
+    <string name="menu_1">菜单1</string>
+    <string name="info">Alert Info</string>
+</resources>

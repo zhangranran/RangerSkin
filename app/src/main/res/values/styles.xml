@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="demo_text">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">@dimen/sp_20</item>
+        <item name="android:background">@drawable/bg_common_loading</item>
+        <item name="android:text">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:padding">@dimen/dp_16</item>
+    </style>
+
+    <style name="demo_text_btn" parent="demo_text">
+        <item name="android:layout_margin">@dimen/dp_50</item>
+    </style>
+
+    <style name="shop_popup_window_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+</resources>

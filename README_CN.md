@@ -1,6 +1,6 @@
 # RangerSkin
 
-A framework for Android app dynamic skins
+基于原生Android打造的一款精致小巧优雅的换肤SDK
 
 ### 一、接入
 
@@ -67,13 +67,23 @@ updateSkinStyle方法第一次加载为耗时操作，建议放在子线程中�
 
 #### 2.5 特殊场景
 
-* 在xml布局中声明的自定义布局（参考demo中[activity_main.xml](app%2Fsrc%2Fmain%2Fres%2Flayout%2Factivity_main.xml)`demo_view`）
+*
 
-* 在代码中动态添加的view对象（参考demo中[MainActivity.kt](app%2Fsrc%2Fmain%2Fjava%2Fcom%2Frangerleo%2Fskin%2Fdemo%2FMainActivity.kt)`addTextView`方法）
+在xml布局中声明的自定义布局（参考demo中[activity_main.xml](app%2Fsrc%2Fmain%2Fres%2Flayout%2Factivity_main.xml)
+中`demo_view`）
 
-* dialog和popupWindow（参考demo中[MainActivity.kt](app%2Fsrc%2Fmain%2Fjava%2Fcom%2Frangerleo%2Fskin%2Fdemo%2FMainActivity.kt)的`dialog`和`popupWindow`）
+*
 
-* fragment适配规则和activity一致，总之通过XML属性声明+View#addOnSkinChangeListener适配的方式可以满足几乎所有场景。
+在代码中动态添加的view对象（参考demo中[MainActivity.kt](app%2Fsrc%2Fmain%2Fjava%2Fcom%2Frangerleo%2Fskin%2Fdemo%2FMainActivity.kt)`addTextView`
+方法）
+
+*
+
+dialog和popupWindow（参考demo中[MainActivity.kt](app%2Fsrc%2Fmain%2Fjava%2Fcom%2Frangerleo%2Fskin%2Fdemo%2FMainActivity.kt)
+的`dialog`和`popupWindow`）
+
+* fragment适配规则和activity一致
+  总之通过XML属性声明+View#addOnSkinChangeListener适配的方式可以满足几乎所有场景。
 
 ### 三、制作皮肤包
 
@@ -96,10 +106,9 @@ Demo工程下[gradle.properties](gradle.properties)
 ### 四、作者
 
 [作者主页](https://juejin.cn/user/1864393707749687)：https://juejin.cn/user/1864393707749687
-作者微信：511809934
-作者支付宝：
 
 ### 五、协议
+
 RangerSkin is licensed under the Apache License 2.0: LICENSE.
 
 

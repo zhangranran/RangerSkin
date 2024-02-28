@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="sp_20">30sp</dimen>
+    <dimen name="sp_25">38sp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_10">15dp</dimen>
+    <dimen name="dp_16">24dp</dimen>
+    <dimen name="dp_50">75dp</dimen>
+    <dimen name="dp_80">100dp</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_switch">switch</string>
+    <string name="app_reset">reset</string>
+    <string name="title">Title</string>
+    <string name="extra">Awesome Day!</string>
+    <string name="reset_skin">Reset Style!</string>
+    <string name="switch_skin">Switch Style!</string>
+    <string name="menu_1">Item 1</string>
+</resources>

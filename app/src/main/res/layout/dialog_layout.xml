@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv_popupwindow_tips"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/dp_50"
+    android:gravity="center"
+    android:text="@string/switch_skin"
+    android:textColor="@color/teal_700"
+    android:textSize="@dimen/sp_20"
+    tools:ignore="MissingDefaultResource" />
