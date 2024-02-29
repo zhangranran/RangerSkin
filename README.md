@@ -92,6 +92,7 @@ Demo工程下[gradle.properties](gradle.properties)
 ```
 
 设置为true运行，执行app的assembleReslease或者assembleDebug会在[build](build)生成皮肤包。皮肤包的后缀以.skin结尾。
+Demo中把[demo.skin](styles%2Fdemo.skin)放在/data/data/com.rangerleo.skin.demo/cache目录下即可查看换肤效果
 
 ### 四、作者
 ![作者微信](styles%2Fimg.png)<br>
